@@ -56,6 +56,11 @@ $(document).ready(function () {
 
 });
 
+
+
+
+
+
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
@@ -69,14 +74,52 @@ document.addEventListener('visibilitychange',
     });
 
 
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const btn = document.querySelector(".cert-viewall .btn");
+  const certSection = document.getElementById("certificationsSection");
+
+  if (btn && certSection) {
+    btn.addEventListener("click", function(e) {
+      e.preventDefault(); // prevent page jump to #certificates
+      if (certSection.style.display === "none") {
+        certSection.style.display = "block";
+        // Optional: scroll to certifications smoothly
+        certSection.scrollIntoView({ behavior: "smooth", block: "start" });
+      } else {
+        certSection.style.display = "none";
+      }
+    });
+  }
+});
+
+
+// <!-- typed js effect starts -->
+
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["frontend development", "backend development", "web designing", "android development", "web development"],
+    strings: [
+        "Software Development",
+        "Full-Stack Development",
+        "Backend Development",
+        "Frontend Development",
+        "Web Development",
+        "Mobile App Development",
+        "Flutter Development",
+        "Cloud Application Development",
+        "UI/UX Design",
+        "AI & ML Application Development",
+        "Cybersecurity"
+    ],
     loop: true,
-    typeSpeed: 50,
-    backSpeed: 25,
-    backDelay: 500,
+    typeSpeed: 70,
+    backSpeed: 40,
+    backDelay: 1500,
 });
+// <!-- typed js effect ends -->
 // <!-- typed js effect ends -->
 
 async function fetchData(type = "skills") {

@@ -1223,3 +1223,125 @@ form .button-area {
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
+
+
+/* View All Certifications button - with blue background */
+.cert-viewall {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.cert-viewall .btn {
+  position: relative;
+  line-height: 0;
+  padding: 1.6rem 3rem;
+  border-radius: 0.5em;
+  transition: 0.5s;
+  color: #fff;
+  font-weight: 700;
+  background: linear-gradient(135deg, #2506ad, #4a00e0);  /* Blue gradient */
+  box-shadow: 0px 5px 10px rgba(65, 84, 241, 0.4);
+  text-align: center;
+  border: none;
+}
+
+.cert-viewall .btn span {
+  font-weight: 600;
+  font-size: 1.7rem;
+  font-family: "Nunito", sans-serif;
+}
+
+.cert-viewall .btn i {
+  margin-left: 0.3rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+.cert-viewall .btn:hover {
+  background: linear-gradient(135deg, #1a047e, #2d00a0);
+  transform: translateY(-2px);
+  color: #fff;
+}
+
+.cert-viewall .btn:hover i {
+  transform: translateX(5px);
+}
+
+
+
+
+
+
+
+/* Certifications Section */
+.certifications-section {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: #f9f9ff;
+  border-radius: 1rem;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.cert-heading {
+  font-size: 2.5rem;
+  color: #2506ad;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.cert-card {
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.cert-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 3px solid #2506ad;
+}
+
+.cert-info {
+  padding: 1.5rem;
+}
+
+.cert-info h4 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.cert-info p {
+  font-size: 1.4rem;
+  color: #666;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+  .cert-card img {
+    height: 150px;
+  }
+}
