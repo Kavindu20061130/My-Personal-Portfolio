@@ -142,11 +142,15 @@ function showSkills(skills) {
                 <img src=${skill.icon} alt="skill" />
                 <span>${skill.name}</span>
               </div>
-            </div>`
+            </div>`;
     });
     skillsContainer.innerHTML = skillHTML;
-}
 
+    // ★ Re-apply ScrollReveal to the new .bar elements
+    if (typeof srtop !== 'undefined') {
+        srtop.reveal('.skills .container .bar', { delay: 400 });
+    }
+}
 function showProjects(projects) {
     let projectsContainer = document.querySelector("#work .box-container");
     let projectHTML = "";
