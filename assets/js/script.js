@@ -37,11 +37,16 @@ $(document).ready(function () {
         }, 500, 'linear')
     });
 
+
+   // <!-- emailjs to mail contact form data -->
+    // <!-- emailjs to mail contact form data -->
+   // <!-- emailjs to mail contact form data -->
     // <!-- emailjs to mail contact form data -->
     $("#contact-form").submit(function (event) {
-        emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
+        emailjs.init("zag-9F5EPWuO-5Ty1")
 
-        emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
+
+        emailjs.sendForm('service_zxixu09', 'template_contact', '#contact-form')
             .then(function (response) {
                 console.log('SUCCESS!', response.status, response.text);
                 document.getElementById("contact-form").reset();
@@ -155,9 +160,13 @@ function showProjects(projects) {
     let projectsContainer = document.querySelector("#work .box-container");
     let projectHTML = "";
     projects.slice(0, 10).filter(project => project.category != "android").forEach(project => {
+        // Use folder-based path: /assets/images/projects/{folder}/1.png
+        const thumbImg = project.folder
+            ? `/assets/images/projects/${project.folder}/1.png`
+            : `/assets/images/projects/${project.image || project.folder}.png`;
         projectHTML += `
         <div class="box tilt">
-      <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
+      <img draggable="false" src="${thumbImg}" alt="project" />
       <div class="content">
         <div class="tag">
         <h3>${project.name}</h3>
@@ -165,7 +174,6 @@ function showProjects(projects) {
         <div class="desc">
           <p>${project.desc}</p>
           <div class="btns">
-            <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
             <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
           </div>
         </div>

@@ -641,7 +641,6 @@ header .navbar ul li a:hover {
 
 /* work section starts */
 .work {
-  /* background: #010124; */
   background: linear-gradient(to bottom, #000031, #00002c);
 }
 .work h2 {
@@ -1087,110 +1086,109 @@ form .button-area {
 /* contact section media queries ends */
 /* contact section ends */
 
-/* footer section starts */
+/* ===== FOOTER - EXACTLY LIKE JIGAR'S PORTFOLIO ===== */
 .footer {
-  min-height: auto;
-  padding-top: 0;
-  background: rgb(0, 1, 43);
+  background: #0a0a2a;
+  padding: 3rem 0 1rem;
+  margin-top: 5rem;
+  font-family: 'Poppins', sans-serif;
 }
-.footer .box-container {
+
+.footer-container {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  gap: 2rem;
 }
-.footer .box-container .box {
-  flex: 1 1 25rem;
-  margin: 2.5rem;
+
+.footer-col {
+  flex: 1 1 250px;
 }
-.footer .box-container .box h3 {
-  font-size: 2.5rem;
+
+.footer-col h3 {
+  font-size: 1.8rem;
   color: #fff;
-  padding-bottom: 1rem;
-  font-weight: normal;
-}
-.footer .box-container .box p {
-  font-size: 1.5rem;
-  color: #ccc;
-  padding: 0.7rem 0;
-  text-transform: none;
-}
-.footer .box-container .box p i {
-  padding-right: 1rem;
-  color: #ffae00;
-}
-.footer .box-container .box a {
-  font-size: 1.5rem;
-  color: rgb(238, 238, 238);
-  padding: 0.3rem 0;
-  display: block;
-}
-.footer .box-container .box a:hover {
-  color: #ffae00;
-}
-.footer .box-container .box .share {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 1rem 0;
-}
-.footer .box-container .box .share a {
-  height: 4rem;
-  width: 4rem;
-  padding: 1rem;
-  text-align: center;
-  border-radius: 5rem;
-  font-size: 1.7rem;
-  margin-right: 1rem;
-  transition: 0.2s;
-  background: rgb(230, 230, 230);
-  color: #02094b;
-  border: none;
-}
-.footer .box-container .box .share a:hover {
-  background: transparent;
-  transform: scale(0.98);
-  border: 0.1rem solid rgb(180, 178, 178);
-  color: #ffae00;
-}
-.footer .credit {
-  padding: 1rem 0 0 0;
-  text-align: center;
-  font-size: 1.5rem;
-  font-family: "Nunito", sans-serif;
   font-weight: 600;
-  color: #fff;
-  border-top: 0.1rem solid #fff3;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  text-transform: capitalize;
 }
-.footer .credit a {
+
+.footer-col p {
+  font-size: 1.4rem;
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+}
+
+.footer-col a {
+  font-size: 1.4rem;
+  color: #ddd;
+  display: block;
+  margin-bottom: 0.8rem;
+  transition: 0.2s;
+}
+
+.footer-col a i {
+  margin-right: 0.8rem;
   color: #ffae00;
+  width: 1.8rem;
 }
-.footer .fa {
-  color: #e90606;
-  margin: 0 0.3rem;
-  font-size: 1.5rem;
-  animation: pound 0.35s infinite alternate;
+
+.footer-col a:hover {
+  color: #ffae00;
+  transform: translateX(5px);
 }
-@-webkit-keyframes pound {
-  to {
-    transform: scale(1.1);
+
+.footer-col p i {
+  margin-right: 0.8rem;
+  color: #ffae00;
+  width: 1.8rem;
+}
+
+.footer-credit {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #aaa;
+  padding: 2rem 0 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-credit a {
+  color: #ffae00;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer-credit a:hover {
+  text-decoration: underline;
+}
+
+.footer-credit .fa-heart {
+  color: #ff3366;
+  animation: heartbeat 0.4s infinite alternate;
+}
+
+@keyframes heartbeat {
+  to { transform: scale(1.2); }
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-col a i,
+  .footer-col p i {
+    margin-right: 0.5rem;
   }
 }
-@keyframes pound {
-  to {
-    transform: scale(1.1);
-  }
-}
-@media (max-width: 450px) {
-  .footer .box-container .box {
-    margin: 1.5rem;
-  }
-  .footer .box-container .box p {
-    padding: 0.7rem;
-  }
-  .footer .box-container .box .share a {
-    padding: 1.2rem;
-  }
-}
-/* footer section ends */
+/* ===== END FOOTER ===== */
 
 /* common media queries starts*/
 @media (max-width: 450px) {
@@ -1224,12 +1222,12 @@ form .button-area {
 }
 /* scroll top ends */
 
-
 /* View All Certifications button - with blue background */
 .cert-viewall {
   display: flex;
   justify-content: center;
   margin-top: 3rem;
+  margin-bottom: 8rem;
 }
 
 .cert-viewall .btn {
@@ -1240,7 +1238,7 @@ form .button-area {
   transition: 0.5s;
   color: #fff;
   font-weight: 700;
-  background: linear-gradient(135deg, #2506ad, #4a00e0);  /* Blue gradient */
+  background: linear-gradient(135deg, #2506ad, #4a00e0);
   box-shadow: 0px 5px 10px rgba(65, 84, 241, 0.4);
   text-align: center;
   border: none;
@@ -1267,12 +1265,6 @@ form .button-area {
 .cert-viewall .btn:hover i {
   transform: translateX(5px);
 }
-
-
-
-
-
-
 
 /* Certifications Section */
 .certifications-section {
