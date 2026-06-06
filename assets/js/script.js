@@ -39,24 +39,23 @@ $(document).ready(function () {
 
 
    // <!-- emailjs to mail contact form data -->
-    // <!-- emailjs to mail contact form data -->
-   // <!-- emailjs to mail contact form data -->
-    // <!-- emailjs to mail contact form data -->
-    $("#contact-form").submit(function (event) {
-        emailjs.init("zag-9F5EPWuO-5Ty1")
+    
+   $("#contact-form").submit(function (event) {
+    event.preventDefault(); // Moved to the top
+    emailjs.init("zag-9F5EPWuO-5Ty1");
 
+    emailjs.sendForm('service_zxixu0', 'template_2nd4cd9', '#contact-form')
+        .then(function (response) {
+            console.log('SUCCESS!', response.status, response.text);
+            document.getElementById("contact-form").reset();
+            alert("Form Submitted Successfully");
+        }, function (error) {
+            // This will now show you the specific error from EmailJS
+            console.error('FAILED...', error);
+            alert(`EmailJS Error: ${error.text}`); // Show the real error
+        });
+});
 
-        emailjs.sendForm('service_zxixu09', 'template_contact', '#contact-form')
-            .then(function (response) {
-                console.log('SUCCESS!', response.status, response.text);
-                document.getElementById("contact-form").reset();
-                alert("Form Submitted Successfully");
-            }, function (error) {
-                console.log('FAILED...', error);
-                alert("Form Submission Failed! Try Again");
-            });
-        event.preventDefault();
-    });
     // <!-- emailjs to mail contact form data -->
 
 });
@@ -159,7 +158,7 @@ function showSkills(skills) {
 function showProjects(projects) {
     let projectsContainer = document.querySelector("#work .box-container");
     let projectHTML = "";
-    projects.slice(0, 10).filter(project => project.category != "android").forEach(project => {
+    projects.slice(0, 10).filter(project => project.category != "android").forEach(project => {   //main page amount 
         // Use folder-based path: /assets/images/projects/{folder}/1.png
         const thumbImg = project.folder
             ? `/assets/images/projects/${project.folder}/1.png`
@@ -246,17 +245,18 @@ document.onkeydown = function (e) {
 }
 
 // Start of Tawk.to Live Chat
+
 var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
 (function () {
     var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
     s1.async = true;
-    s1.src = 'https://embed.tawk.to/60df10bf7f4b000ac03ab6a8/1f9jlirg6';
+    s1.src = 'https://embed.tawk.to/6a22ded46c9c5b1c325afa5e/1jqc3csce';
     s1.charset = 'UTF-8';
     s1.setAttribute('crossorigin', '*');
     s0.parentNode.insertBefore(s1, s0);
 })();
-// End of Tawk.to Live Chat
 
+// End of Tawk.to Live Chat
 
 /* ===== SCROLL REVEAL ANIMATION ===== */
 const srtop = ScrollReveal({
@@ -304,3 +304,68 @@ srtop.reveal('.experience .timeline .container', { interval: 400 });
 /* SCROLL CONTACT */
 srtop.reveal('.contact .container', { delay: 400 });
 srtop.reveal('.contact .container .form-group', { delay: 400 });
+
+
+
+
+
+
+
+
+// Certificate lightbox
+(function() {
+  const overlay = document.createElement('div');
+  overlay.id = 'cert-lightbox';
+  Object.assign(overlay.style, {
+    display: 'none', position: 'fixed', inset: '0',
+    background: 'rgba(0,0,0,0.85)', zIndex: '99999',
+    alignItems: 'center', justifyContent: 'center',
+    cursor: 'zoom-out', padding: '2rem'
+  });
+
+  const img = document.createElement('img');
+  Object.assign(img.style, {
+    maxWidth: '90vw', maxHeight: '90vh',
+    borderRadius: '1rem', boxShadow: '0 20px 60px rgba(0,0,0,0.6)',
+    objectFit: 'contain', cursor: 'default'
+  });
+
+  const closeBtn = document.createElement('button');
+  closeBtn.innerHTML = '&times;';
+  Object.assign(closeBtn.style, {
+    position: 'fixed', top: '1.5rem', right: '2rem',
+    background: 'none', border: 'none', color: '#fff',
+    fontSize: '3.5rem', cursor: 'pointer', lineHeight: '1',
+    zIndex: '100000'
+  });
+
+  overlay.appendChild(img);
+  overlay.appendChild(closeBtn);
+  document.body.appendChild(overlay);
+
+  function openLightbox(src) {
+    img.src = src;
+    overlay.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    overlay.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+
+  closeBtn.addEventListener('click', closeLightbox);
+  overlay.addEventListener('click', function(e) {
+    if (e.target === overlay) closeLightbox();
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLightbox();
+  });
+
+  document.addEventListener('click', function(e) {
+    const card = e.target.closest('.cert-card');
+    if (card) {
+      const cardImg = card.querySelector('img');
+      if (cardImg) openLightbox(cardImg.src);
+    }
+  });
+})();

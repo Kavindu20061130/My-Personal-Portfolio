@@ -1337,3 +1337,482 @@ form .button-area {
     height: 150px;
   }
 }
+
+
+
+
+
+
+
+
+
+/* ================================================================
+   REFINED ANIMATIONS EXTENSION
+   Paste this at the very bottom of your style.css
+   Philosophy: subtle, elegant — nothing jarring or eye-straining
+   ================================================================ */
+
+
+/* ─────────────────────────────────────────────────────────────────
+   KEYFRAMES
+───────────────────────────────────────────────────────────────── */
+
+/* Gentle float — hero image */
+@keyframes gentleFloat {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-10px); }
+}
+
+/* Soft glow ring — hero image border */
+@keyframes softGlow {
+  0%, 100% { box-shadow: 0 4px 20px rgba(37, 6, 173, 0.25), 0 0 0 6px rgba(37,6,173,0.06); }
+  50%       { box-shadow: 0 8px 32px rgba(37, 6, 173, 0.45), 0 0 0 10px rgba(115,3,167,0.1); }
+}
+
+/* Fade + rise — used for hero text, cards */
+@keyframes fadeRise {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Fade in only — no movement */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Slide in from left — content blocks */
+@keyframes slideLeft {
+  from { opacity: 0; transform: translateX(-30px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* Slide in from right — image blocks */
+@keyframes slideRight {
+  from { opacity: 0; transform: translateX(30px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* Underline expand — headings */
+@keyframes underlineGrow {
+  from { width: 0%; opacity: 0; }
+  to   { width: 60px; opacity: 1; }
+}
+
+/* Subtle scale pop — buttons, social icons */
+@keyframes scalePop {
+  0%   { transform: scale(0.88); opacity: 0; }
+  80%  { transform: scale(1.04); }
+  100% { transform: scale(1);    opacity: 1; }
+}
+
+/* Typing cursor blink */
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+/* Heartbeat — footer heart */
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  14%       { transform: scale(1.18); }
+  28%       { transform: scale(1); }
+  42%       { transform: scale(1.12); }
+  70%       { transform: scale(1); }
+}
+
+/* Slow nav slide down */
+@keyframes navSlideDown {
+  from { transform: translateY(-100%); opacity: 0; }
+  to   { transform: translateY(0);     opacity: 1; }
+}
+
+/* Soft card lift — on hover */
+/* (used via transition, not keyframe) */
+
+/* Progress bar fill */
+@keyframes barFill {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+/* Particle canvas fade in */
+@keyframes particleFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+
+/* ─────────────────────────────────────────────────────────────────
+   NAVBAR
+───────────────────────────────────────────────────────────────── */
+
+header {
+  animation: navSlideDown 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Smooth animated underline on nav links */
+header .navbar ul li a {
+  position: relative;
+}
+header .navbar ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #011aff;
+  border-radius: 2px;
+  transition: width 0.28s ease;
+}
+header .navbar ul li a:hover::after,
+header .navbar ul li a.active::after {
+  width: 100%;
+}
+/* Remove the hard border-bottom from original hover — let the ::after handle it */
+header .navbar ul li a.active,
+header .navbar ul li a:hover {
+  border-bottom: none;
+  padding: 0;
+}
+
+
+/* ─────────────────────────────────────────────────────────────────
+   HERO SECTION
+───────────────────────────────────────────────────────────────── */
+
+/* Particles canvas — fade in smoothly */
+.home #particles-js {
+  animation: particleFadeIn 1.2s ease both;
+}
+
+/* Hero text — gentle staggered rise */
+.home .content h2 {
+  animation: fadeRise 0.7s ease 0.1s both;
+}
+.home .content p {
+  animation: fadeRise 0.7s ease 0.25s both;
+}
+.home .btn {
+  animation: fadeRise 0.7s ease 0.4s both;
+}
+.socials {
+  animation: fadeRise 0.7s ease 0.55s both;
+}
+
+/* Social icons — stagger pop in */
+.socials .social-icons li:nth-child(1) { animation: scalePop 0.45s ease 0.6s  both; }
+.socials .social-icons li:nth-child(2) { animation: scalePop 0.45s ease 0.7s  both; }
+.socials .social-icons li:nth-child(3) { animation: scalePop 0.45s ease 0.8s  both; }
+.socials .social-icons li:nth-child(4) { animation: scalePop 0.45s ease 0.9s  both; }
+.socials .social-icons li:nth-child(5) { animation: scalePop 0.45s ease 1.0s  both; }
+
+/* Social icon hover — lift only, no spin */
+.social-icons a {
+  transition: transform 0.22s ease, background-color 0.22s ease, box-shadow 0.22s ease;
+}
+.social-icons a:hover {
+  transform: translateY(-4px) scale(1.1);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+/* Hero image — float + soft glow */
+.home .image {
+  animation: slideRight 0.8s ease 0.2s both;
+}
+.home .image img {
+  animation: gentleFloat 5s ease-in-out infinite,
+             softGlow    4s ease-in-out infinite;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* CTA button — smooth press on click */
+.home .btn {
+  transition: transform 0.2s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+.home .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(37, 6, 173, 0.45);
+}
+.home .btn:active {
+  transform: translateY(0px) scale(0.97);
+}
+
+
+/* ─────────────────────────────────────────────────────────────────
+   SECTION HEADINGS — refined underline accent
+───────────────────────────────────────────────────────────────── */
+
+.heading {
+  position: relative;
+  padding-bottom: 1.4rem;
+}
+.heading::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 60px;
+  background: linear-gradient(90deg, #2506ad, #7303a7);
+  border-radius: 3px;
+  animation: underlineGrow 0.6s ease 0.3s both;
+}
+
+
+/* ─────────────────────────────────────────────────────────────────
+   ABOUT SECTION
+───────────────────────────────────────────────────────────────── */
+
+.about .row .image img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease, mix-blend-mode 0.4s ease;
+}
+.about .row .image img:hover {
+  transform: scale(1.03) translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.18);
+}
+
+.resumebtn .btn {
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+.resumebtn .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(37, 6, 173, 0.4);
+}
+.resumebtn .btn:active {
+  transform: scale(0.97);
+}
+
+
+/* ─────────────────────────────────────────────────────────────────
+   SKILLS SECTION
+───────────────────────────────────────────────────────────────── */
+
+.skills .bar {
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  border-radius: 6px;
+}
+.skills .bar:hover {
+  transform: translateX(6px);
+  box-shadow: -3px 0 0 #2506ad, 0 2px 12px rgba(37,6,173,0.12);
+}
+
+.skills .bar .info img {
+  transition: transform 0.3s ease;
+}
+.skills .bar:hover .info img {
+  transform: rotate(8deg) scale(1.1);
+}
+
+
+/* ─────────────────────────────────────────────────────────────────
+   EDUCATION SECTION
+───────────────────────────────────────────────────────────────── */
+
+.education .box {
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+.education .box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 36px rgba(0,0,0,0.12);
+}
+
+.education .box .image img {
+  transition: transform 0.3s ease;
+}
+.education .box:hover .image img {
+  transform: scale(1.05);
+}
+
+
+/* ─────────────────────────────────────────────────────────────────
+   PROJECTS / WORK SECTION
+───────────────────────────────────────────────────────────────── */
+
+.work .box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+.work .box:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 18px 44px rgba(37,6,173,0.18);
+}
+
+.work .box img {
+  transition: transform 0.45s ease, filter 0.45s ease;
+  filter: brightness(0.92);
+}
+.work .box:hover img {
+  transform: scale(1.06);
+  filter: brightness(1);
+}
+
+/* Code/View buttons */
+.work .box .btns .btn {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.work .box .btns .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(37,6,173,0.3);
+}
+
+
+/* ─────────────────────────────────────────────────────────────────
+   EXPERIENCE SECTION
+───────────────────────────────────────────────────────────────── */
+
+.experience .timeline .container .content {
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+.experience .timeline .container .content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(37,6,173,0.15);
+}
+
+
+/* ─────────────────────────────────────────────────────────────────
+   CONTACT SECTION
+───────────────────────────────────────────────────────────────── */
+
+/* Input focus — gentle glow ring */
+.field input:focus,
+.message textarea:focus {
+  box-shadow: 0 0 0 3px rgba(115, 3, 167, 0.15);
+  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+/* Contact image — subtle float */
+.contact .content .image-box img {
+  animation: gentleFloat 6s ease-in-out infinite;
+}
+
+/* Submit button */
+.button-area button {
+  transition: transform 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+.button-area button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(48, 68, 247, 0.45);
+}
+.button-area button:active {
+  transform: scale(0.97);
+}
+
+
+/* ─────────────────────────────────────────────────────────────────
+   CERTIFICATIONS SECTION
+───────────────────────────────────────────────────────────────── */
+
+.cert-card {
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+.cert-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 16px 38px rgba(0,0,0,0.14);
+}
+
+.cert-card img {
+  transition: transform 0.4s ease;
+}
+.cert-card:hover img {
+  transform: scale(1.04);
+}
+
+.cert-viewall .btn {
+  transition: transform 0.22s ease, box-shadow 0.3s ease;
+}
+.cert-viewall .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 26px rgba(37,6,173,0.35);
+}
+
+
+/* ─────────────────────────────────────────────────────────────────
+   FOOTER
+───────────────────────────────────────────────────────────────── */
+
+.footer-col a {
+  transition: color 0.22s ease, transform 0.22s ease;
+}
+.footer-col a:hover {
+  color: #ffae00;
+  transform: translateX(5px);
+}
+
+.footer-credit .fa-heart {
+  animation: heartbeat 1.6s ease-in-out infinite;
+  color: #ff3366;
+}
+
+
+/* ─────────────────────────────────────────────────────────────────
+   SCROLL TO TOP
+───────────────────────────────────────────────────────────────── */
+
+#scroll-top {
+  transition: top 0.9s ease, background 0.3s ease, transform 0.22s ease;
+}
+#scroll-top:hover {
+  background: #2506ad;
+  color: #fff;
+  transform: translateY(-4px);
+}
+
+
+/* ─────────────────────────────────────────────────────────────────
+   ACCESSIBILITY — Respect reduced-motion preference
+───────────────────────────────────────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+
+/* ─────────────────────────────────────────────────────────────────
+   FOOTER — FULL WIDTH FIX
+   Removes the max-width cap so footer spans the entire viewport
+───────────────────────────────────────────────────────────────── */
+
+.footer {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  max-width: 100%;
+  padding: 2rem 6%;
+}
+
+.footer-credit {
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+
+
+
+
+
+.cert-card {
+  cursor: zoom-in;
+}
+
+
+
+
+
+
+
+
+

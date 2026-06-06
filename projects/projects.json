@@ -6,13 +6,13 @@
     "images": ["1","2","3","4","5","6","7","8","9","10","11"],
     "category": "fullstack",
     "tech": ["Flutter", "Firebase", "Dart", "Real-time DB", "Mobile"],
-    "links": { "view": "#", "code": "https://github.com/Kavindu20061130/Office-Dashboard-MY-QUEUE-APP" }
+    "links": { "view": "#", "code": "https://github.com/Nawe2005/queuelkapp" }
   },
   {
     "name": "QueueLK Office Admin Dashboard",
     "desc": "Designed for government office administrators to manage services, counters, officers, and daily queue operations. Administrators can monitor queue statistics, assign service counters, manage token allocations, and view performance reports through a centralized web interface.",
     "folder": "queuelkoffice",
-    "images": ["1","2","3","4","5"],
+    "images": ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19"],
     "category": "fullstack",
     "tech": ["Flask", "Firebase", "Python", "HTML", "JavaScript"],
     "links": { "view": "#", "code": "https://github.com/Kavindu20061130/Office-Dashboard-MY-QUEUE-APP" }
@@ -21,25 +21,25 @@
     "name": "QueueLK System Admin Dashboard",
     "desc": "Central management platform for the entire QueueLK ecosystem. System administrators can manage multiple government offices, configure system-wide settings, monitor platform performance, oversee user accounts, and ensure smooth operation of all connected services with advanced analytics.",
     "folder": "queuelksystem",
-    "images": ["1","2","3","4","5"],
+    "images": ["1","2","3","4","5","6","7"],
     "category": "fullstack",
     "tech": ["Flask", "Firebase", "Python", "Analytics", "Security"],
-    "links": { "view": "#", "code": "https://github.com/Kavindu20061130/Office-Dashboard-MY-QUEUE-APP" }
+    "links": { "view": "#", "code": "https://github.com/Nawe2005/queuelksystemadmin" }
   },
   {
     "name": "QueueLK AI Prediction Model",
     "desc": "Intelligent component that analyzes queue data to estimate waiting times and predict service demand patterns. Using historical token records and real-time queue information, the model helps users understand expected waiting durations and assists administrators in identifying peak hours and optimizing staff allocation.",
     "folder": "queuelkAI",
-    "images": ["1","2","3","4","5"],
+    "images": ["1","2"],
     "category": "fullstack",
     "tech": ["Python", "Machine Learning", "Firebase", "Data Analysis", "AI"],
-    "links": { "view": "#", "code": "https://github.com/Kavindu20061130/Office-Dashboard-MY-QUEUE-APP" }
+    "links": { "view": "#", "code": "https://github.com/Ruinzey/QueueLK-ML-Service" }
   },
   {
     "name": "Help In Hand - Charity Resource Manager",
     "desc": "Web application connecting donors with charities and orphanages. Users view resource requests, make donations, and track contributions. Simplifies donor-organization communication.",
     "folder": "helpinhand",
-    "images": ["1","2","3","4","5"],
+    "images": ["1","2","3","4","5","6","7","8","9","10","11","12","13"],
     "category": "fullstack",
     "tech": ["Java", "HTML", "CSS", "JavaScript", "MySQL"],
     "links": { "view": "#", "code": "https://github.com/Kavindu20061130/Help-in-Hand-Application" }
@@ -48,7 +48,7 @@
     "name": "My Quote Application",
     "desc": "Ruby on Rails web app for collecting, sharing, and managing inspirational quotes. Users create accounts, add public or private quotes, and browse others' collections with secure authentication.",
     "folder": "myquote",
-    "images": ["1","2","3","4","5"],
+    "images": ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17"],
     "category": "fullstack",
     "tech": ["Ruby on Rails", "PostgreSQL", "HTML", "CSS", "Auth"],
     "links": { "view": "#", "code": "https://github.com/Kavindu20061130/My-Quote-Application" }
@@ -56,8 +56,8 @@
   {
     "name": "Distributed PITRE System",
     "desc": "Three-tier distributed tax estimation system built with Python and Pyro5. Secure login and income-based tax calculation, demonstrating distributed computing concepts with SQLite.",
-    "folder": "pitre",
-    "images": ["1","2","3","4","5"],
+    "folder": "Distributed PITRE System",
+    "images": ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15"],
     "category": "python",
     "tech": ["Python", "Pyro5", "SQLite", "Distributed", "Client-Server"],
     "links": { "view": "#", "code": "https://github.com/Kavindu20061130/Distributed-PIRTE-System" }
@@ -66,45 +66,61 @@
     "name": "Tic-Tac-Toe Flutter App",
     "desc": "4x4 Tic-Tac-Toe mobile game developed in Flutter and Dart with a built-in AI opponent. A second-year university project to practice mobile development and basic AI logic.",
     "folder": "tictactoe",
-    "images": ["1","2","3","4","5"],
+    "images": ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19"],
     "category": "mobile",
     "tech": ["Flutter", "Dart", "AI Logic", "Mobile", "Game Dev"],
     "links": { "view": "#", "code": "https://github.com/Kavindu20061130/Tic-Tac-Toe-application" }
   },
+
+   {
+    "name": "My Personal Portfolio Website",
+    "desc": "Clean and professional portfolio showcasing skills, projects, education, and achievements as a Software Engineering undergraduate. Built with modern web technologies.",
+    "folder": "My Personal Portfolio Website",
+    "images": ["1","2","3","4","5","6","7","8","9","10","11","12"],
+    "category": "fullstack",
+    "tech": ["HTML", "CSS", "JavaScript", "Responsive", "Animations"],
+    "links": { "view": "#", "code": "https://github.com/Kavindu20061130/My-Personal-Portfolio" }
+  },
+{
+    "name": "Malware Detection Using Artificial Intelligence(Machine Learning) Approaches Implemented in Python ",
+    "desc": "This malware detection model was developed and tested using Google Colab, which provided a cloud-based Python environment for data preprocessing, model training, evaluation, and experimentation. Google Colab enabled efficient implementation of the selected AI approach and supported the analysis of malware detection datasets",
+    "folder": "Malware Detection",
+    "images": ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15"],
+    "category": "python",
+    "tech": ["Python", "Google colab", "Algorithms", "Logic", "AI", "Data Analysis","Machine Learning","CNN"],
+    "links": { "view": "#", "code": "None" }
+  },
+
   {
     "name": "Guess Game",
     "desc": "Python console game where players guess a secret password from 8 words, with feedback on correct letters and positions. Practices loops, functions, and list operations.",
-    "folder": "guessgame",
-    "images": ["1","2","3","4","5"],
+    "folder": "Guess Game",
+    "images": ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19"],
     "category": "python",
     "tech": ["Python", "Console App", "Algorithms", "Logic"],
     "links": { "view": "#", "code": "https://github.com/Kavindu20061130/Guess-Game" }
   },
+
+
   {
-    "name": "Word Game in C++",
-    "desc": "Console-based word guessing game in C++ where players form words to earn points. Demonstrates loops, conditions, functions, and arrays while building vocabulary.",
-    "folder": "wordgame",
-    "images": ["1","2","3","4","5"],
+    "name": "Word Game in C#",
+    "desc": "Console-based word guessing game in C# where players form words to earn points. Demonstrates loops, conditions, functions, and arrays while building vocabulary.",
+    "folder": "WordGame",
+    "images": ["1","2","3","4"],
     "category": "cpp",
-    "tech": ["C++", "Console App", "OOP", "Arrays", "Functions"],
-    "links": { "view": "#", "code": "https://github.com/Kavindu20061130/Word-Game-C-" }
+    "tech": ["C#", "Console App", "OOP", "Arrays", "Functions"],
+    "links": { "view": "#", "code": "https://github.com/Kavindu20061130/Word-Game-C#" }
   },
+
+  
   {
-    "name": "C-Dictionary",
+    "name": "C++ Dictionary",
     "desc": "C++ digital English dictionary with word search, definitions, and a fun 'guess the fourth word' mini-game. Showcases file handling and data structures in C++.",
-    "folder": "cdictionary",
-    "images": ["1","2","3","4","5"],
+    "folder": "C++ Dictionary",
+    "images": ["1"],
     "category": "cpp",
     "tech": ["C++", "File I/O", "Data Structures", "Console", "Search"],
     "links": { "view": "#", "code": "https://github.com/Kavindu20061130/C-Dictiona" }
-  },
-  {
-    "name": "My Personal Portfolio Website",
-    "desc": "Clean and professional portfolio showcasing skills, projects, education, and achievements as a Software Engineering undergraduate. Built with modern web technologies.",
-    "folder": "portfolio",
-    "images": ["1","2","3","4","5"],
-    "category": "fullstack",
-    "tech": ["HTML", "CSS", "JavaScript", "Responsive", "Animations"],
-    "links": { "view": "#", "code": "https://github.com/Kavindu20061130/My-Personal-Portfolio" }
   }
+ 
 ]
