@@ -2,6 +2,9 @@
 
 Welcome to my personal portfolio website! 🚀
 
+
+https://kavinduakash.netlify.app
+
 I am a passionate Software Engineering undergraduate at Edith Cowan University with a strong interest in software development, cloud technologies, cybersecurity, and artificial intelligence. This portfolio serves as a central hub to showcase my academic achievements, technical skills, certifications, and projects that demonstrate my ability to design, develop, and manage innovative software solutions.
 
 Throughout my academic journey, I have gained experience working on real-world projects involving web applications, mobile applications, cloud-based systems, distributed computing, and intelligent systems. I enjoy solving complex problems, learning new technologies, and collaborating with teams to create impactful solutions that address real-world challenges.
