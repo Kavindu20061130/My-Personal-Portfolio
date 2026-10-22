@@ -7,11 +7,9 @@
   "images": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15","16"],
   "category": "fullstack",
   "tech": ["Python", "Flask", "Firebase", "MySQL", "HTML", "CSS", "JavaScript", "Google OAuth", "REST API"],
-  "links": {
-    "view": "#",
-    "code": "#"
+  "links": { "view": "#", "code": "https://github.com/Kavindu20061130/FixGo-" }
   }
-},
+
   {
     "name": "QueueLK Mobile Application",
     "desc": "User-friendly mobile platform that allows citizens to book service tokens remotely before visiting government offices. Users can select the required service, reserve a queue position, receive notifications, and monitor their live queue status in real time. Reduces physical waiting times, minimizes overcrowding, and improves the overall public service experience.",
