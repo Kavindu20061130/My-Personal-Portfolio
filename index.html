@@ -13,6 +13,30 @@
     <!-- Favicon -->
     <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
     <title>Portfolio | Kavindu Akash</title>
+
+    <!-- Featured projects: maximum six cards on the homepage -->
+    <style>
+      #work .box-container {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 2rem;
+        max-width: 1250px;
+        margin: 3rem auto;
+      }
+      #work .box-container > .box {
+        width: 100%;
+        min-width: 0;
+        height: 32rem;
+      }
+      #work .box-container > .box:nth-child(n+7) { display: none !important; }
+      @media (max-width: 1000px) {
+        #work .box-container { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      }
+      @media (max-width: 600px) {
+        #work .box-container { grid-template-columns: minmax(0, 1fr); margin: 2rem auto; }
+        #work .box-container > .box { height: 32rem; }
+      }
+    </style>
 </head>
 <body oncontextmenu="return false">
 
@@ -29,6 +53,7 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#work">Work</a></li>
+            <li><a href="/tech/">Tech Hub</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#contact">Contact</a></li>
             </ul>
@@ -79,10 +104,10 @@
 
     <div class="content">
       <h3>I'm Kavindu Akash Wijekumara</h3>
-      <span class="tag">Full-Stack Developer | Computer Science Undergraduate</span>
+      <span class="tag">Software Engineering | Computer Science Undergraduate</span>
 
       <p>
-        Hello! I'm <b>Kavindu Akash Wijekumara</b>, a passionate Full-Stack Developer
+        Hello! I'm <b>Kavindu Akash Wijekumara</b>, a passionate Software Engineering
         and Computer Science undergraduate with a strong interest in building
         innovative digital solutions. I have experience designing and developing
         web applications, mobile applications, and cloud-based systems while working
@@ -105,11 +130,11 @@
 
         <div class="box">
           <p><span> Email : </span> kavinduakash520@gmail.com</p>
-          <p><span> Phone : </span> +94 70 300 3963</p>
+          <p><span> Phone : </span> +94 76 747 2261</p>
         </div>
 
         <div class="box">
-          <p><span> Education : </span> BSc Computer Science Major Software Engineering Edith Cowan University perth</p>
+          <p><span> Education : </span> Bachelor of Computer Science Major Software Engineering Edith Cowan University Western Australia</p>
           <p><span> Location : </span> Negombo, Sri Lanka</p>
         </div>
 
@@ -155,87 +180,11 @@
 
 
 
-<!-- education section starts -->
-<section class="education" id="education">
-
-  <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
-
-  <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
-
-  <div class="box-container">
-
-    <!-- Degree -->
-    <div class="box">
-      <div class="image">
-        <img draggable="false" src="./assets/images/educat/ecu.jpg" alt="University">
-      </div>
-      <div class="content">
-        <h3>Bachelor of Computer Science (Software Engineering)</h3>
-        <p>Edith Cowan University</p>
-        <h4>2024 – 2026 | Compleated</h4>
-        <p>WAM: 73 | GPA: 3.3</p>
-      </div>
-    </div>
-     
-
-    
-     
-
-    <!-- Diploma ACBT -->
-    <div class="box">
-      <div class="image">
-        <img draggable="false" src="./assets/images/educat/acbt.jpg" alt="ACBT Sri Lanka">
-      </div>
-      <div class="content">
-        <h3>Diploma in Computer Science</h3>
-        <p>ACBT Sri Lanka</p>
-        <h4>2023 – 2024 | Completed</h4>
-      </div>
-    </div>
-
-    <!-- ESOFT -->
-    <div class="box">
-      <div class="image">
-        <img draggable="false" src="./assets/images/educat/esoft.jpg" alt="ESOFT Metro Campus">
-      </div>
-      <div class="content">
-        <h3>Diploma in Information Technology (Pearson Assured)</h3>
-        <p>ESOFT Metro Campus</p>
-        <h4>2022 – 2023 | Completed</h4>
-      </div>
-    </div>
-
- <!-- Foundation -->
-<div class="box">
-  <div class="image">
-    <img draggable="false" src="./assets/images/educat/esoft2.jpg" alt="Foundation IT">
-  </div>
-  <div class="content">
-    <h3>Foundation in Information Technology</h3>
-    <p>Esoft Metro Campus</p>
-    <h4>2021 – 2022 | Completed</h4>
-  </div>
-</div>
-
-<!-- GCE O/L -->
-<div class="box">
-  <div class="image">
-    <img draggable="false" src="./assets/images/educat/adventist.jpg" alt="Adventist International School">
-  </div>
-  <div class="content">
-    <h3>G.C.E. Ordinary Level (O/L)</h3>
-    <p>Adventist International School</p>
-    <h4>2012 – 2022 | Completed</h4>
-  </div>
-</div>
-  </div>
-
-
-
+<section class="education education-modern" id="education" aria-labelledby="education-title"><div class="edu-wrap"><div class="edu-heading"><span class="edu-eyebrow"><i class="fas fa-book-open"></i> MY ACADEMIC JOURNEY</span><h2 class="heading" id="education-title"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h2><p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p></div><div class="edu-overview"><div><strong>05</strong><span>Academic milestones</span></div><div><strong>2026</strong><span>Degree completed</span></div><div><strong>74.62</strong><span>Degree WAM</span></div></div><div class="edu-timeline"><article class="edu-card" aria-label="Bachelor of Computer Science, Edith Cowan University"><div class="edu-photo"><img src="./assets/images/educat/ecu.jpg" alt="Edith Cowan University campus" loading="lazy"><span class="edu-photo-tag"><i class="fas fa-graduation-cap"></i> Completed</span></div><div class="edu-details"><span class="edu-kicker">DEGREE · 01</span><h3>Bachelor of Computer Science</h3><p class="edu-specialisation">Major in Software Engineering</p><p class="edu-institution"><i class="fas fa-university" aria-hidden="true"></i> Edith Cowan University</p><p class="edu-description">An Australian public university known for applied learning and industry-focused education. My studies covered software engineering, application development, system architecture, testing and collaborative projects.</p><div class="edu-meta"><span class="edu-date"><i class="far fa-calendar-alt"></i> 2024 – 2026</span><span class="edu-status"><i class="fas fa-check-circle"></i> Completed</span><span class="edu-chip">WAM 74.62</span><span class="edu-chip">GPA 3.43</span></div></div></article><article class="edu-card" aria-label="Diploma in Computer Science, ACBT Sri Lanka"><div class="edu-photo"><img src="./assets/images/educat/acbt.jpg" alt="ACBT Sri Lanka campus" loading="lazy"><span class="edu-photo-tag"><i class="fas fa-graduation-cap"></i> Completed</span></div><div class="edu-details"><span class="edu-kicker">DIPLOMA · 02</span><h3>Diploma in Computer Science</h3><p class="edu-institution"><i class="fas fa-university" aria-hidden="true"></i> ACBT Sri Lanka</p><p class="edu-description">ACBT provides pathways to internationally recognised higher education. This diploma helped develop my foundations in programming, computing concepts and problem-solving.</p><div class="edu-meta"><span class="edu-date"><i class="far fa-calendar-alt"></i> 2023 – 2024</span><span class="edu-status"><i class="fas fa-check-circle"></i> Completed</span></div></div></article><article class="edu-card" aria-label="Diploma in Information Technology, ESOFT Metro Campus"><div class="edu-photo"><img src="./assets/images/educat/esoft.jpg" alt="ESOFT Metro Campus campus" loading="lazy"><span class="edu-photo-tag"><i class="fas fa-graduation-cap"></i> Completed</span></div><div class="edu-details"><span class="edu-kicker">DIPLOMA · 03</span><h3>Diploma in Information Technology</h3><p class="edu-specialisation">Pearson Assured</p><p class="edu-institution"><i class="fas fa-university" aria-hidden="true"></i> ESOFT Metro Campus</p><p class="edu-description">ESOFT Metro Campus offers computing and professional education in Sri Lanka. My diploma strengthened my understanding of information technology and practical digital skills.</p><div class="edu-meta"><span class="edu-date"><i class="far fa-calendar-alt"></i> 2022 – 2024</span><span class="edu-status"><i class="fas fa-check-circle"></i> Completed</span></div></div></article><article class="edu-card" aria-label="Foundation in Information Technology, ESOFT Metro Campus"><div class="edu-photo"><img src="./assets/images/educat/esoft2.jpg" alt="ESOFT Metro Campus campus" loading="lazy"><span class="edu-photo-tag"><i class="fas fa-graduation-cap"></i> Completed</span></div><div class="edu-details"><span class="edu-kicker">FOUNDATION · 04</span><h3>Foundation in Information Technology</h3><p class="edu-institution"><i class="fas fa-university" aria-hidden="true"></i> ESOFT Metro Campus</p><p class="edu-description">This foundation programme introduced essential computing principles and prepared me for further study in information technology and computer science.</p><div class="edu-meta"><span class="edu-date"><i class="far fa-calendar-alt"></i> 2021 – 2022</span><span class="edu-status"><i class="fas fa-check-circle"></i> Completed</span></div></div></article><article class="edu-card" aria-label="G.C.E. Ordinary Level (O/L), Adventist International School"><div class="edu-photo"><img src="./assets/images/educat/adventist.jpg" alt="Adventist International School campus" loading="lazy"><span class="edu-photo-tag"><i class="fas fa-graduation-cap"></i> Completed</span></div><div class="edu-details"><span class="edu-kicker">SCHOOL · 05</span><h3>G.C.E. Ordinary Level (O/L)</h3><p class="edu-institution"><i class="fas fa-university" aria-hidden="true"></i> Adventist International School</p><p class="edu-description">My school education helped me build a foundation in academic learning, communication, teamwork and analytical thinking before progressing into IT studies.</p><div class="edu-meta"><span class="edu-date"><i class="far fa-calendar-alt"></i> 2012 – 2023</span><span class="edu-status"><i class="fas fa-check-circle"></i> Completed</span></div></div></article></div></div><div class="edu-cert-slot">
 <!-- Small expand button for certifications -->
 <!-- View All Certifications button (same style as Projects) -->
 <div class="cert-viewall">
-  <a href="#certificates" class="btn">
+  <a href="#certificationsSection" class="btn">
     <span>View All Certifications</span>
     <i class="fas fa-arrow-right"></i>
   </a>
@@ -363,12 +312,60 @@
   </div> <!-- .cert-grid -->
 </div> <!-- #certificationsSection -->
     
+</div><!-- /edu-cert-slot -->
 <!-- education section continues -->
 
 
 
 
 
+
+</section><!-- education section ends -->
+<!-- Recents cinematic gallery -->
+<section class="recents" id="recents" aria-labelledby="recents-title">
+  <div class="recents-inner">
+    <div class="recents-eyebrow"><i class="fas fa-camera-retro"></i> MOMENTS · MEMORIES · MILESTONES</div>
+    <h2 id="recents-title">Recents<span class="recents-yellow">.</span></h2>
+    <p class="recents-subtitle">A glimpse into my latest moments and experiences.</p>
+    <div class="recents-viewer" id="recentsViewer" aria-roledescription="carousel" aria-label="Recent photos">
+      <div class="recents-canvas" id="recentsCanvas" aria-live="off"></div>
+      <div class="recents-bottom">
+        <div class="recents-count" id="recentsCount">00 / 00</div>
+        <div class="recents-progress" id="recentsProgress" aria-label="Slideshow progress"></div>
+        <div class="recents-actions"><button type="button" id="recentsPrev" aria-label="Previous photo"><i class="fas fa-arrow-left"></i></button><button type="button" id="recentsPause" aria-label="Pause slideshow"><i class="fas fa-pause"></i></button><button type="button" id="recentsNext" aria-label="Next photo"><i class="fas fa-arrow-right"></i></button></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="tech-preview" id="tech-hub" aria-labelledby="tech-title">
+  <div class="tech-preview-inner">
+    <div class="tech-eyebrow"><i class="fas fa-satellite-dish"></i> DISCOVER · LEARN · CONNECT</div>
+    <h2 id="tech-title">Explore My <span>Tech Hub</span></h2>
+    <p class="tech-intro">A new way to explore articles, professional stories, technology videos and news. Move your cursor over a card or swipe to explore.</p>
+    <div class="tech-showcase" aria-label="Interactive Tech Hub carousel">
+      <div class="tech-stage" id="techStage">
+        <a class="tech-slide" href="/tech/#blogs" data-theme="articles" aria-label="Explore technology articles">
+          <div class="tech-art tech-art-code" aria-hidden="true"><span class="tech-art-tag">&lt; / &gt;</span><div class="tech-code-lines"><i></i><i></i><i></i><i></i></div><span class="tech-art-orbit"></span></div>
+          <div class="tech-slide-copy"><span class="tech-card-kicker">01 / DISCOVER</span><h3>Tech Articles</h3><p>Explore real developer stories, AI insights and software engineering ideas.</p><span class="tech-card-link">Explore articles <i class="fas fa-arrow-right"></i></span></div>
+        </a>
+        <a class="tech-slide" href="/tech/#linkedin" data-theme="linkedin" aria-label="Explore LinkedIn posts">
+          <div class="tech-art tech-art-linkedin" aria-hidden="true"><span class="tech-art-tag"><i class="fab fa-linkedin-in"></i></span><div class="tech-profile-shape"><i class="fas fa-user-circle"></i><span></span><span></span></div><span class="tech-art-orbit"></span></div>
+          <div class="tech-slide-copy"><span class="tech-card-kicker">02 / CONNECT</span><h3>LinkedIn Posts</h3><p>See my career milestones, professional updates and original posts.</p><span class="tech-card-link">View updates <i class="fas fa-arrow-right"></i></span></div>
+        </a>
+        <a class="tech-slide" href="/tech/#videos" data-theme="videos" aria-label="Explore technology videos">
+          <div class="tech-art tech-art-video" aria-hidden="true"><span class="tech-art-tag"><i class="fab fa-youtube"></i></span><div class="tech-video-screen"><i class="fas fa-play"></i></div><span class="tech-art-orbit"></span></div>
+          <div class="tech-slide-copy"><span class="tech-card-kicker">03 / WATCH</span><h3>Tech Videos</h3><p>Watch useful videos on development, cloud technologies and AI.</p><span class="tech-card-link">Watch videos <i class="fas fa-arrow-right"></i></span></div>
+        </a>
+        <a class="tech-slide" href="/tech/#news" data-theme="news" aria-label="Explore technology news">
+          <div class="tech-art tech-art-news" aria-hidden="true"><span class="tech-art-tag"><i class="fas fa-globe"></i></span><div class="tech-news-panel"><i class="fas fa-newspaper"></i><span></span><span></span><span></span></div><span class="tech-art-orbit"></span></div>
+          <div class="tech-slide-copy"><span class="tech-card-kicker">04 / STAY INFORMED</span><h3>Tech News</h3><p>Catch up on headlines and insights from trusted tech publishers.</p><span class="tech-card-link">Read the latest <i class="fas fa-arrow-right"></i></span></div>
+        </a>
+      </div>
+      <div class="tech-controls"><button class="tech-arrow" id="techPrev" type="button" aria-label="Previous card"><i class="fas fa-arrow-left"></i></button><div class="tech-dots" id="techDots" aria-label="Choose a card"></div><button class="tech-arrow" id="techNext" type="button" aria-label="Next card"><i class="fas fa-arrow-right"></i></button></div>
+    </div>
+    <a class="tech-primary-link" href="/tech/">Visit Full Tech Hub <i class="fas fa-arrow-right"></i></a>
+  </div>
+</section>
 
 <!-- work project section starts -->
 <section class="work" id="work">
@@ -406,8 +403,7 @@
 <!-- work project section ends -->
 
 
-<!-- experience section starts -->
-<!-- experience section starts -->
+<!-- experience section starts 
 <section class="experience" id="experience">
 
   <h2 class="heading">
@@ -416,7 +412,7 @@
 
   <div class="timeline">
 
-    <!-- Freelance Experience -->
+     Freelance Experience 
     <div class="container right">
       <div class="content">
         <div class="tag">
@@ -434,7 +430,7 @@
       </div>
     </div>
 
-    <!-- QueueLK -->
+    QueueLK 
     <div class="container left">
       <div class="content">
         <div class="tag">
@@ -452,7 +448,7 @@
       </div>
     </div>
 
-    <!-- Mobile Development -->
+  Mobile Development 
     <div class="container right">
       <div class="content">
         <div class="tag">
@@ -469,7 +465,7 @@
       </div>
     </div>
 
-    <!-- Portfolio -->
+    Portfolio 
     <div class="container left">
       <div class="content">
         <div class="tag">
@@ -490,10 +486,96 @@
   </div>
 
 </section>
-<!-- experience section ends -->
+experience section ends -->
 
 
 
+<!-- Career Plan Section -->
+<section class="experience" id="experience">
+
+  <h2 class="heading">
+    <i class="fas fa-briefcase"></i>
+    Career <span>Plan</span>
+  </h2>
+
+  <div class="career-wrapper">
+
+    <div class="career-card">
+
+      <div class="career-card-header">
+        <div class="career-icon">
+          <i class="fas fa-code"></i>
+        </div>
+
+        <div>
+          <span class="career-label">PROFESSIONAL DEVELOPMENT</span>
+          <h3>My Career Aspirations</h3>
+        </div>
+      </div>
+
+      <div class="career-divider"></div>
+
+      <p class="career-description">
+        I am a Computer Science graduate specialising in
+        Software Engineering, with a strong academic foundation
+        and practical experience in software development through
+        academic and personal projects. I am committed to
+        continuous learning, professional development, and
+        expanding my knowledge of emerging technologies.
+      </p>
+
+      <p class="career-description">
+        My career goal is to become a skilled software engineer
+        by gaining industry experience, strengthening my
+        technical and problem-solving abilities, and
+        contributing to innovative technology projects.
+        In the long term, I aspire to progress into senior
+        technical and leadership roles and eventually
+        establish my own technology startup.
+      </p>
+
+      <div class="career-goals">
+
+        <div class="goal-item">
+          <div class="goal-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <div>
+            <h4>Short-Term Goal</h4>
+            <p>Build industry experience and technical expertise.</p>
+          </div>
+        </div>
+
+        <div class="goal-item">
+          <div class="goal-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div>
+            <h4>Mid-Term Goal</h4>
+            <p>Advance into senior software engineering roles.</p>
+          </div>
+        </div>
+
+        <div class="goal-item">
+          <div class="goal-icon">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <div>
+            <h4>Long-Term Goal</h4>
+            <p>Establish an innovative technology startup.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- Career Plan Section Ends -->
+
+<!-- career plan section ends -->
 
 <!-- contact section starts -->
 <section class="contact" id="contact">
@@ -568,6 +650,7 @@
   <div class="footer-credit">
     Designed with <i class="fas fa-heart"></i> by <a href="https://www.linkedin.com/in/wkavinduakash/" target="_blank">Kavindu Akash</a>
   </div>
+  <div class="site-version">v0.3 <span>·</span> Updated 22 Oct 2026</div>
 </footer>
 <!-- footer section ends -->
 
@@ -603,6 +686,10 @@
 <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
 
 <script src="./assets/js/script.js"></script>
+<script src="./assets/js/tech-carousel.js" defer></script>
+<script src="./assets/js/recents.js" defer></script>
 
+<script>/* Accessible scroll reveals: no external animation dependency */
+(function(){const nodes=document.querySelectorAll('.edu-card, .edu-overview');if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches){nodes.forEach(n=>n.classList.add('edu-visible'));return;}const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('edu-visible');observer.unobserve(e.target);}})},{threshold:.08,rootMargin:'0px 0px -25px 0px'});nodes.forEach(n=>observer.observe(n));})();</script>
 </body>
 </html>

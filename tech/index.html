@@ -1,0 +1,488 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta
+    name="description"
+    content="Explore Kavindu Akash's technology articles, LinkedIn updates, YouTube videos and latest technology news."
+  >
+
+  <!-- Same favicon as the main portfolio -->
+  <link
+    rel="icon"
+    type="image/png"
+    href="/assets/images/favicon.png"
+  >
+
+  <title>Tech Hub | Kavindu Akash</title>
+
+  <!-- Tech Hub stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="nav">
+    <div class="nav-inner">
+
+      <a class="brand" href="/">
+        &lt;/&gt; Kavindu Akash
+      </a>
+
+      <nav aria-label="Main navigation">
+        <a href="/">Portfolio</a>
+        <a href="#blogs">Blogs</a>
+        <a href="#linkedin">LinkedIn</a>
+        <a href="#videos">Tech Videos</a>
+        <a href="#news">Tech News</a>
+        <a href="#contribute">Submit Article</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+
+      <p class="eyebrow">
+        INSIGHTS / COMMUNITY / INNOVATION
+      </p>
+
+      <h1>
+        Explore my <span>Tech Hub.</span>
+      </h1>
+
+      <p class="intro">
+        A space for practical development stories,
+        professional updates and the latest conversations
+        in technology.
+      </p>
+
+      <div class="actions">
+
+        <a class="primary" href="#blogs">
+          Explore blogs ↓
+        </a>
+
+        <a class="secondary" href="/">
+          Back to portfolio
+        </a>
+
+      </div>
+
+    </section>
+
+    <div class="content">
+
+      <!-- TECH ARTICLES -->
+      <section class="section" id="blogs">
+
+        <div class="section-head">
+
+          <div>
+            <p class="eyebrow">
+              CURATED TECH READING
+            </p>
+
+            <h2>
+              ✒ Tech Articles
+              <small id="blogCount"></small>
+            </h2>
+
+            <p>
+              Read developer articles with original publisher
+              cover images when available. Preview articles
+              or open the source for the complete story.
+            </p>
+          </div>
+
+          <input
+            id="blogSearch"
+            type="search"
+            placeholder="Search articles..."
+            aria-label="Search blog articles"
+          >
+
+        </div>
+
+        <div class="articles-banner">
+
+          <img
+            src="images/tech-illustration.png"
+            alt="Software development, artificial intelligence, cloud computing and technology"
+            loading="eager"
+          >
+
+          <div class="articles-banner-caption">
+
+            <span>
+              TECHNOLOGY · DEVELOPMENT · INNOVATION
+            </span>
+
+            <strong>
+              Explore ideas shaping modern software.
+            </strong>
+
+          </div>
+
+        </div>
+
+        <div class="cards" id="blogCards"></div>
+
+      </section>
+
+      <!-- LINKEDIN POSTS -->
+      <section class="section" id="linkedin">
+
+        <div class="section-head">
+
+          <div>
+
+            <p class="eyebrow">
+              PROFESSIONAL JOURNEY
+            </p>
+
+            <h2>
+              LinkedIn Updates
+              <small id="linkedinCount"></small>
+            </h2>
+
+            <p>
+              Original LinkedIn posts displayed in equal-sized,
+              scrollable windows. Scroll inside each post
+              to read more and view its photographs.
+            </p>
+
+          </div>
+
+          <a
+            class="secondary"
+            href="https://www.linkedin.com/in/wkavinduakash/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View my profile ↗
+          </a>
+
+        </div>
+
+        <div
+          class="linkedin-feed"
+          id="linkedinCards"
+        ></div>
+
+      </section>
+
+      <!-- TECH VIDEOS -->
+      <section class="section" id="videos">
+
+        <div class="section-head">
+
+          <div>
+
+            <p class="eyebrow">
+              WATCH & LEARN
+            </p>
+
+            <h2>
+              ▶ Tech Videos
+              <small id="videoCount"></small>
+            </h2>
+
+            <p>
+              Explore software engineering, artificial
+              intelligence, cloud computing and modern
+              development videos directly on this website.
+            </p>
+
+          </div>
+
+        </div>
+
+        <div
+          class="video-grid"
+          id="videoCards"
+        ></div>
+
+      </section>
+
+      <!-- TECH NEWS -->
+      <section class="section" id="news">
+
+        <div class="section-head">
+
+          <div>
+
+            <p class="eyebrow">
+              STAY INFORMED
+            </p>
+
+            <h2>
+              ◎ Latest Tech News
+            </h2>
+
+            <p>
+              Technology and developer news from
+              trusted publishers.
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="news-grid">
+
+          <a
+            href="https://news.ycombinator.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <strong>Hacker News</strong>
+            <span>
+              Developer and startup conversations ↗
+            </span>
+          </a>
+
+          <a
+            href="https://techcrunch.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <strong>TechCrunch</strong>
+            <span>
+              Technology and startup reporting ↗
+            </span>
+          </a>
+
+          <a
+            href="https://www.theverge.com/tech"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <strong>The Verge</strong>
+            <span>
+              Technology news and analysis ↗
+            </span>
+          </a>
+
+        </div>
+
+      </section>
+
+      <!-- COMMUNITY ARTICLE SUBMISSION -->
+      <section
+        class="submit-section"
+        id="contribute"
+      >
+
+        <p class="eyebrow">
+          COMMUNITY CONTRIBUTIONS
+        </p>
+
+        <h2>
+          ✍ Share a Tech Article
+        </h2>
+
+        <p>
+          Have a useful technology tutorial, idea, or article?
+          Submit it with a cover photo. Submissions are
+          reviewed before appearing publicly on this website.
+        </p>
+
+        <form
+          class="submit-form"
+          name="tech-article-submission"
+          method="POST"
+          action="/tech/submitted.html"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          enctype="multipart/form-data"
+        >
+
+          <input
+            type="hidden"
+            name="form-name"
+            value="tech-article-submission"
+          >
+
+          <p class="form-honeypot">
+            <label>
+              Do not fill this out
+              <input name="bot-field">
+            </label>
+          </p>
+
+          <label>
+            Your name
+
+            <input
+              name="author"
+              required
+              maxlength="100"
+              autocomplete="name"
+              placeholder="Your name"
+            >
+          </label>
+
+          <label>
+            Email address
+
+            <input
+              name="email"
+              type="email"
+              required
+              autocomplete="email"
+              placeholder="you@example.com"
+            >
+          </label>
+
+          <label class="wide">
+            Article title
+
+            <input
+              name="title"
+              required
+              maxlength="180"
+              placeholder="What is your article about?"
+            >
+          </label>
+
+          <label class="wide">
+            Article content
+
+            <textarea
+              name="article"
+              required
+              minlength="100"
+              maxlength="20000"
+              placeholder="Write your technology article here..."
+            ></textarea>
+          </label>
+
+          <label class="wide">
+            Cover photo (JPG, PNG, WebP; up to 5 MB)
+
+            <input
+              id="articleImage"
+              name="cover-image"
+              type="file"
+              accept="image/jpeg,image/png,image/webp"
+              required
+            >
+
+            <small id="imagePreviewLabel">
+              Choose a clear, original or appropriately
+              licensed image.
+            </small>
+
+            <img
+              id="articleImagePreview"
+              alt="Selected article cover preview"
+              hidden
+              style="max-width:100%;max-height:320px;object-fit:contain;border-radius:10px"
+            >
+          </label>
+
+          <label class="wide">
+            Additional image (optional)
+
+            <input
+              name="extra-image"
+              type="file"
+              accept="image/jpeg,image/png,image/webp"
+            >
+          </label>
+
+          <div class="wide">
+
+            <button type="submit">
+              Submit article for review →
+            </button>
+
+            <p class="submission-note">
+              <small>
+                After successful submission, a confirmation
+                page with a check mark appears.
+
+                Submissions are not published automatically.
+                The site owner reviews them in Netlify Forms
+                and adds approved articles to the Tech Hub.
+              </small>
+            </p>
+
+          </div>
+
+        </form>
+
+      </section>
+
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <p>
+      © 2026 Kavindu Akash ·
+      <a href="/">Portfolio</a>
+    </p>
+
+    <p class="version">
+      v1.6 <span>·</span> Updated 22 Oct 2026
+    </p>
+
+  </footer>
+
+  <!-- IMAGE GALLERY -->
+  <dialog id="gallery">
+
+    <button
+      id="closeGallery"
+      aria-label="Close image gallery"
+    >
+      ×
+    </button>
+
+    <img
+      id="galleryImage"
+      alt="Blog gallery image"
+    >
+
+    <div class="gallery-actions">
+
+      <button id="previousImage">
+        ← Previous
+      </button>
+
+      <span id="galleryCount"></span>
+
+      <button id="nextImage">
+        Next →
+      </button>
+
+    </div>
+
+  </dialog>
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js" defer></script>
+
+</body>
+</html>

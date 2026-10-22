@@ -1,0 +1,202 @@
+{
+  "blogs": [
+    {
+      "title": "The results of the 2026 Developer Survey are here!",
+      "category": "Developer Survey",
+      "date": "6 Oct 2026",
+      "excerpt": "More than 30,000 developers shared insights about technologies, learning, work, and AI adoption.",
+      "image": "images/article-01.jpg",
+      "url": "https://stackoverflow.blog/2026/10/06/the-results-of-the-2026-developer-survey-are-here/",
+      "source": "Stack Overflow · External article",
+      "external": true,
+      "publisherImage": true
+    },
+    {
+      "title": "Octoverse: A new developer joins GitHub every second as AI leads TypeScript to #1",
+      "category": "Developer Trends",
+      "date": "28 Oct 2025",
+      "excerpt": "GitHub explores developer growth, AI adoption, and TypeScript becoming its most-used language.",
+      "image": "images/article-02.jpg",
+      "url": "https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/",
+      "source": "GitHub Blog · External article",
+      "external": true,
+      "publisherImage": true
+    },
+    {
+      "title": "Why developer expertise matters more than ever in the age of AI",
+      "category": "AI & Careers",
+      "date": "",
+      "excerpt": "A discussion of why engineering judgment and technical expertise remain important alongside AI coding tools.",
+      "image": "images/article-03.jpg",
+      "url": "https://github.blog/developer-skills/career-growth/why-developer-expertise-matters-more-than-ever-in-the-age-of-ai/",
+      "source": "GitHub Blog · External article",
+      "external": true,
+      "publisherImage": true
+    },
+    {
+      "title": "Getting ready for 2026 results: A look back on Developer Survey findings",
+      "category": "Developer Survey",
+      "date": "30 Sep 2026",
+      "excerpt": "A look back at developer survey trends ahead of the 2026 results.",
+      "image": "images/article-04.jpg",
+      "url": "https://stackoverflow.blog/2026/09/30/getting-ready-for-2026-results-a-look-back-on-developer-survey-findings/",
+      "source": "Stack Overflow · External article",
+      "external": true,
+      "publisherImage": true
+    },
+    {
+      "title": "The new identity of a developer: What changes and what doesn’t in the AI era",
+      "category": "AI & Development",
+      "date": "",
+      "excerpt": "How AI tools are influencing the role, workflows, and responsibilities of developers.",
+      "image": "images/article-05.jpg",
+      "url": "https://github.blog/news-insights/octoverse/the-new-identity-of-a-developer-what-changes-and-what-doesnt-in-the-ai-era/",
+      "source": "GitHub Blog · External article",
+      "external": true,
+      "publisherImage": true
+    },
+    {
+      "title": "A year of open source vulnerability trends: CVEs, advisories, and malware",
+      "category": "Security",
+      "date": "",
+      "excerpt": "An overview of open-source vulnerability trends and software supply-chain risks.",
+      "image": "images/article-06.jpg",
+      "url": "https://github.blog/security/supply-chain-security/a-year-of-open-source-vulnerability-trends-cves-advisories-and-malware/",
+      "source": "GitHub Blog · External article",
+      "external": true,
+      "publisherImage": true
+    },
+    {
+      "title": "How we built a 130,000-node GKE cluster",
+      "category": "Cloud & Kubernetes",
+      "date": "",
+      "excerpt": "A look at engineering and infrastructure challenges involved in operating Kubernetes at very large scale.",
+      "image": "images/article-07.jpg",
+      "url": "https://cloud.google.com/blog/products/containers-kubernetes/how-we-built-a-130000-node-gke-cluster",
+      "source": "Google Cloud · External article",
+      "external": true,
+      "publisherImage": true
+    },
+    {
+      "title": "Securing the AI software supply chain: Security results across 67 open source projects",
+      "category": "Security & AI",
+      "date": "",
+      "excerpt": "Security findings from a review of open-source projects in the AI software ecosystem.",
+      "image": "images/article-08.jpg",
+      "url": "https://github.blog/open-source/maintainers/securing-the-ai-software-supply-chain-security-results-across-67-open-source-projects/",
+      "source": "GitHub Blog · External article",
+      "external": true,
+      "publisherImage": true
+    },
+    {
+      "title": "An application-centric, AI-powered cloud",
+      "category": "Cloud & AI",
+      "date": "",
+      "excerpt": "Google Cloud discusses a cloud approach centered on applications and AI capabilities.",
+      "image": "images/article-09.jpg",
+      "url": "https://cloud.google.com/blog/products/application-development/an-application-centric-ai-powered-cloud",
+      "source": "Google Cloud · External article",
+      "external": true,
+      "publisherImage": true
+    },
+    {
+      "title": "Disrupting supply chain attacks on npm and GitHub Actions",
+      "category": "Security",
+      "date": "",
+      "excerpt": "Approaches to understanding and reducing software supply-chain attacks involving developer tooling.",
+      "image": "images/article-10.jpg",
+      "url": "https://github.blog/security/supply-chain-security/disrupting-supply-chain-attacks-on-npm-and-github-actions/",
+      "source": "GitHub Blog · External article",
+      "external": true,
+      "publisherImage": true
+    }
+  ],
+  "linkedin": [
+    {
+      "title": "LinkedIn post 01",
+      "embedUrl": "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7497188295962050561",
+      "height": 963,
+      "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7497188295962050561/"
+    },
+    {
+      "title": "LinkedIn post 02",
+      "embedUrl": "https://www.linkedin.com/embed/feed/update/urn:li:share:7486047456477106176",
+      "height": 1761,
+      "url": "https://www.linkedin.com/feed/update/urn:li:share:7486047456477106176/"
+    },
+    {
+      "title": "LinkedIn post 03",
+      "embedUrl": "https://www.linkedin.com/embed/feed/update/urn:li:share:7482497527372734464",
+      "height": 669,
+      "url": "https://www.linkedin.com/feed/update/urn:li:share:7482497527372734464/"
+    },
+    {
+      "title": "LinkedIn post 04",
+      "embedUrl": "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7482373348442783745",
+      "height": 1446,
+      "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7482373348442783745/"
+    },
+    {
+      "title": "LinkedIn post 05",
+      "embedUrl": "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7475435059014086656",
+      "height": 2369,
+      "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7475435059014086656/"
+    },
+    {
+      "title": "LinkedIn post 06",
+      "embedUrl": "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7469419644391432193",
+      "height": 543,
+      "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7469419644391432193/"
+    },
+    {
+      "title": "LinkedIn post 07",
+      "embedUrl": "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7463171854422200320",
+      "height": 2244,
+      "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7463171854422200320/"
+    },
+    {
+      "title": "LinkedIn post 08",
+      "embedUrl": "https://www.linkedin.com/embed/feed/update/urn:li:share:7425895811215015936",
+      "height": 1530,
+      "url": "https://www.linkedin.com/feed/update/urn:li:share:7425895811215015936/"
+    },
+    {
+      "title": "LinkedIn post 09",
+      "embedUrl": "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7236715988967161856",
+      "height": 942,
+      "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7236715988967161856/"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Tech video · Episode 01",
+      "id": "nQdXp6HKKik",
+      "url": "https://www.youtube.com/watch?v=nQdXp6HKKik"
+    },
+    {
+      "title": "Tech video · Episode 02",
+      "id": "1f69pjulNWE",
+      "url": "https://www.youtube.com/watch?v=1f69pjulNWE"
+    },
+    {
+      "title": "Building AI agents on Google Cloud — Google Cloud Tech",
+      "id": "8rlNdKywldQ",
+      "url": "https://www.youtube.com/watch?v=8rlNdKywldQ"
+    },
+    {
+      "title": "Developer Power-Ups: AI agents on Google Cloud — Google Cloud Tech",
+      "id": "pg6TOXyiIuo",
+      "url": "https://www.youtube.com/watch?v=pg6TOXyiIuo"
+    },
+    {
+      "title": "How the GitHub Copilot coding agent works | GitHub Checkout",
+      "id": "1GVBRhDI5No",
+      "url": "https://www.youtube.com/watch?v=1GVBRhDI5No"
+    },
+    {
+      "title": "Introduction to Responsive Web Design — HTML & CSS Tutorial",
+      "id": "srvUrASNj0s",
+      "url": "https://www.youtube.com/watch?v=srvUrASNj0s"
+    }
+  ]
+}
